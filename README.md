@@ -6,6 +6,7 @@ left join user on post.user_id = user.user_id
 left join tags on post.tag_id = tags.tag_id
 group by user.user_id, post.tag_id
 having count(post.tag_id) > 5
+order by count(post.tag_id) desc
 ```
 
 Przykład z danymi:  
