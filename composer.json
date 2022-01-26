@@ -1,0 +1,21 @@
+{
+  "name": "pabluuz/tag-find-five",
+  "type": "library",
+  "description": "Find tag-user with more than five posts",
+  "keywords": ["find", "tag", "user", "five posts"],
+  "license": "MIT",
+
+  "autoload": {
+    "psr-4": {
+      "FivePosts\\": "src/FivePosts/"
+    },
+    "files": [
+      "src/FivePosts/FivePosts.php"
+    ]
+  },
+
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "symfony/http-foundation": "^5.4"
+  }
+}
